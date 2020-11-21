@@ -1,0 +1,3 @@
+include ':CustomRecyclerAdapter'
+include ':app'
+rootProject.name = "Library Project"
