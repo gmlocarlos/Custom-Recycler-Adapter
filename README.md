@@ -17,9 +17,10 @@ allprojects {
 ```gradle
 android {
 	...
-	dataBinding{
-		enabled = true
-	}
+	buildFeatures {
+        dataBinding = true
+	...
+    }
 }
 ```
 **Step 3.** Add the dependency in your app's module build.gradle
