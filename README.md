@@ -104,7 +104,7 @@ public class User {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL,false));
-        CustomRecyclerAdapter<User, ItemRecyclerBinding> recyclerAdapter = new com.gmlo.cra.CustomRecyclerAdapter<User, ItemRecyclerBinding>() {
+        CustomRecyclerAdapter<User, ItemRecyclerBinding> recyclerAdapter = new CustomRecyclerAdapter<User, ItemRecyclerBinding>() {
             @Override
             protected void onBindData(User user, int i, ItemRecyclerBinding itemRecyclerBinding) {
                 itemRecyclerBinding.tvName.setText(user.getName());
