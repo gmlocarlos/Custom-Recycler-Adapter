@@ -37,6 +37,7 @@ public class User {
         this.age = age;
     }
 
+    // this method is only for this example
     public static List<User> getSampleUsers(){
         List<User> listSample = new ArrayList<>();
         listSample.add(new User(1,"Juan Perez",18));
